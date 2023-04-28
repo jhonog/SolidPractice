@@ -36,5 +36,4 @@ class Penguin implements Bird {
     public run(): void { 
         throw new Error("Esta ave no corre");
     }
-    public swim(){}
 }
