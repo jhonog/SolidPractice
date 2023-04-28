@@ -5,35 +5,36 @@ interface Bird {
 }
 
 class Tucan implements Bird {
-    fly(): void { }
-    eat(): void { }
-    run(): void { 
+    public fly(): void { }
+    public eat(): void { }
+    public run(): void { 
         throw new Error("Esta ave no corre");
     }
 }
 
 class HumminBird implements Bird {
-    fly(): void { }
-    eat(): void { }
-    run(): void { 
+    public fly(): void { }
+    public eat(): void { }
+    public run(): void { 
         throw new Error("Esta ave no corre");
     }
 }
 
 class Ostrich implements Bird {
-    fly(): void {
+    public fly(): void {
         throw new Error("Esta ave no vuela");
     }
-    eat(): void { }
-    run(): void { }
+    public eat(): void { }
+    public run(): void { }
 }
 
 class Penguin implements Bird {
-    fly(): void {
+    public fly(): void {
         throw new Error("Esta ave no vuela");
     }
-    eat(): void { }
-    run(): void { 
+    public eat(): void { }
+    public run(): void { 
         throw new Error("Esta ave no corre");
     }
+    public swim(){}
 }
