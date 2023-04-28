@@ -1,4 +1,4 @@
-import { JsonDataBaseService, WebApiPostService } from "./05-dependency-c";
+import { JsonDataBaseService } from "./05-dependency-c";
 
 export interface Post {
     body: string;
@@ -18,7 +18,7 @@ export class PostService {
 
         const postProvider = new JsonDataBaseService();
 
-        this.posts = await postProvider.getPost();
+        this.posts = await postProvider.getPostJson();
 
         return this.posts;
     }

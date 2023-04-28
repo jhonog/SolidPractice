@@ -4,7 +4,7 @@ import { Post } from './05-dependency-b';
 
 export class LocalDataBaseService {
 
-    async getPost() {
+    async getPostLocal() {
         return [
             {
                 'userId': 1,
@@ -23,13 +23,13 @@ export class LocalDataBaseService {
 }
 
 export class JsonDataBaseService {
-    async getPost() {
+    async getPostJson() {
         return localPosts;
     }
 }
 
 export class WebApiPostService{
-    async getPost(): Promise<Post[]> {
+    async getPostWeb(): Promise<Post[]> {
 
         const resp = await fetch('https://jsonplaceholder.typicode.com/posts');
         return await resp.json();
